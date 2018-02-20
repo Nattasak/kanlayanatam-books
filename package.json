@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Nattasak Lertpoompunya",
   "license": "UNLICENSED",
-  "homepage": "https://nattasak.github.io/kanlayanatam-books",
+  "homepage": "http://nattasak.github.io/kanlayanatam-books",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
