@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import { BackTop } from "antd"
 
-import "./App.css"
-
 import BookList from "./components/BookList"
+
+import "./App.css"
 
 class App extends Component {
   render() {
