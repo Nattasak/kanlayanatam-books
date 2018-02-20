@@ -12,7 +12,7 @@ export default class App extends Component {
         <section className="hero">
           <div className="hero-body">
             <div className="container">
-              <a href="/">
+              <a href="http://nattasak.github.io/kanlayanatam-books/">
                 <h1 className="title">ชมรมกัลยาณธรรม</h1>
                 <h2 className="subtitle">Dhamma books</h2>
               </a>
