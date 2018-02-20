@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Rate, Icon, Tooltip } from "antd"
+import { Icon, Rate, Tag, Tooltip } from "antd"
 
 import "./BookList.css"
 
@@ -34,6 +34,9 @@ export default class BookList extends Component {
                       <Icon type="download" style={{ fontSize: 27 }} />
                     </Tooltip>
                   </a>
+                </div>
+                <div className="tag-wrap">
+                  <Tag>พระไพศาล วิสาโล</Tag>
                 </div>
                 <div className="content">
                   <p>
@@ -76,6 +79,9 @@ export default class BookList extends Component {
                     </Tooltip>
                   </a>
                 </div>
+                <div className="tag-wrap">
+                  <Tag>พระไพศาล วิสาโล</Tag>
+                </div>
                 <div className="content">
                   <p>
                     เราไม่สามารถควบคุมบงการ ผู้คนและโลกรอบตัว ให้เป็นดั่งใจ
@@ -112,6 +118,9 @@ export default class BookList extends Component {
                       <Icon type="download" style={{ fontSize: 27 }} />
                     </Tooltip>
                   </a>
+                </div>
+                <div className="tag-wrap">
+                  <Tag>พระไพศาล วิสาโล</Tag>
                 </div>
                 <div className="content">
                   <p>
@@ -153,6 +162,9 @@ export default class BookList extends Component {
                         </Tooltip>
                       </a>
                     </div>
+                    <div className="tag-wrap">
+                      <Tag>อ.วศิน อินทสระ</Tag>
+                    </div>
                     <div className="content">
                       <p>
                         ความเข้าใจแจ่มแจ้งในเรื่องกรรมทำให้เรามีความอดทนในการทำความดี
@@ -193,6 +205,9 @@ export default class BookList extends Component {
                           <Icon type="download" style={{ fontSize: 27 }} />
                         </Tooltip>
                       </a>
+                    </div>
+                    <div className="tag-wrap">
+                      <Tag>พระไพศาล วิสาโล</Tag>
                     </div>
                     <div className="content">
                       <p>
@@ -244,6 +259,9 @@ export default class BookList extends Component {
                       </Tooltip>
                     </a>
                   </div>
+                  <div className="tag-wrap">
+                    <Tag>ปันยา</Tag>
+                  </div>
                 </article>
               </div>
             </div>
@@ -272,6 +290,9 @@ export default class BookList extends Component {
                       <Icon type="download" style={{ fontSize: 27 }} />
                     </Tooltip>
                   </a>
+                </div>
+                <div className="tag-wrap">
+                  <Tag>อ.วศิน อินทสระ</Tag>
                 </div>
                 <div className="content">
                   <p>
@@ -326,6 +347,9 @@ export default class BookList extends Component {
                     </Tooltip>
                   </a>
                 </div>
+                <div className="tag-wrap">
+                  <Tag>พระไพศาล วิสาโล</Tag>
+                </div>
               </article>
             </div>
             <div className="tile is-parent is-8">
@@ -353,6 +377,9 @@ export default class BookList extends Component {
                       <Icon type="download" style={{ fontSize: 27 }} />
                     </Tooltip>
                   </a>
+                </div>
+                <div className="tag-wrap">
+                  <Tag>เงาศิลป์ คงแก้ว</Tag>
                 </div>
                 <div className="content">
                   <p>
