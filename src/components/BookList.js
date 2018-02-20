@@ -12,7 +12,7 @@ export default class BookList extends React.Component {
               title="ขยายใจให้ใหญ่ขึ้น"
               author="พระไพศาล วิสาโล"
               star={5}
-              img="http://kanlayanatam.com/book/cover/kayaijai.jpg"
+              img="img/books/kayaijai.jpg"
               pdf="http://kanlayanatam.com/book/kayaijai.pdf"
               size={4}
             >
@@ -30,7 +30,7 @@ export default class BookList extends React.Component {
               title="วางใจให้เป็น"
               author="พระไพศาล วิสาโล"
               star={5}
-              img="http://kanlayanatam.com/book/cover/WarngJai.jpg"
+              img="img/books/warngjai.jpg"
               pdf="http://kanlayanatam.com/book/WarngJai.pdf"
               size={4}
             >
@@ -45,7 +45,7 @@ export default class BookList extends React.Component {
               title="เปลี่ยนทุกข์เป็นธรรม"
               author="พระไพศาล วิสาโล"
               star={4}
-              img="http://kanlayanatam.com/book/cover/pleantook.jpg"
+              img="img/books/pleantook.jpg"
               pdf="http://kanlayanatam.com/book/PleanTook.pdf"
               size={4}
             >
@@ -61,7 +61,7 @@ export default class BookList extends React.Component {
                   title="ปิยกรณธรรม"
                   author="อ.วศิน อินทสระ"
                   star={3}
-                  img="http://kanlayanatam.com/book/cover/Piyakorntham.jpg"
+                  img="img/books/Piyakorntham.jpg"
                   pdf="http://kanlayanatam.com/book/Piyakorntham.pdf"
                   size={6}
                 >
@@ -80,7 +80,7 @@ export default class BookList extends React.Component {
                   title="ธรรมะสำหรับผู้ป่วย"
                   author="พระไพศาล วิสาโล"
                   star={4}
-                  img="http://kanlayanatam.com/book/cover/book180_.jpg"
+                  img="img/books/book180.jpg"
                   pdf="http://kanlayanatam.com/book/book_180.pdf"
                   size={6}
                 >
@@ -107,7 +107,7 @@ export default class BookList extends React.Component {
                 title="ได้เวลาชำระจิตชำรุด"
                 author="ปันยา"
                 star={4}
-                img="http://kanlayanatam.com/book/cover/daivela.jpg"
+                img="img/books/daivela.jpg"
                 pdf="http://kanlayanatam.com/book/daivela.pdf"
                 size={12}
               />
@@ -117,7 +117,7 @@ export default class BookList extends React.Component {
               title="ความดีและอานุภาพของความดี"
               author="อ.วศิน อินทสระ"
               star={3}
-              img="http://kanlayanatam.com/book/cover/kvamdee_.jpg"
+              img="img/books/kvamdee.jpg"
               pdf="http://kanlayanatam.com/book/kvamdee.pdf"
               size={4}
             >
@@ -147,7 +147,7 @@ export default class BookList extends React.Component {
               title="ชีวิตที่จิตใฝ่หา"
               author="พระไพศาล วิสาโล"
               star={3}
-              img="http://kanlayanatam.com/book/cover/jitphaiha.jpg"
+              img="img/books/jitphaiha.jpg"
               pdf="http://kanlayanatam.com/book/jitphaiha.pdf"
               size={4}
             />
@@ -156,7 +156,7 @@ export default class BookList extends React.Component {
               title="เรื่องของแม่ชีป่าน"
               author="เงาศิลป์ คงแก้ว"
               star={3}
-              img="http://kanlayanatam.com/book/cover/MaeShePan.jpg"
+              img="img/books/MaeShePan.jpg"
               pdf="http://kanlayanatam.com/book/MaeShePan.pdf"
               size={8}
             >

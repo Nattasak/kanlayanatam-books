@@ -1,11 +1,11 @@
-import React, { Component } from "react"
+import React from "react"
 import { BackTop } from "antd"
 
 import BookList from "./components/BookList"
 
 import "./App.css"
 
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
       <div className="App">
