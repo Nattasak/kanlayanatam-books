@@ -16,6 +16,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/kayaijai.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/kayaijai.jpg"
@@ -60,6 +61,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/WarngJai.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/WarngJai.jpg"
@@ -100,6 +102,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/PleanTook.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/pleantook.jpg"
@@ -143,6 +146,7 @@ export default class BookList extends Component {
                         href="http://kanlayanatam.com/book/Piyakorntham.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="hvr-rotate"
                       >
                         <img
                           src="http://kanlayanatam.com/book/cover/Piyakorntham.jpg"
@@ -187,6 +191,7 @@ export default class BookList extends Component {
                         href="http://kanlayanatam.com/book/book_180.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="hvr-rotate"
                       >
                         <img
                           src="http://kanlayanatam.com/book/cover/book180_.jpg"
@@ -240,6 +245,7 @@ export default class BookList extends Component {
                       href="http://kanlayanatam.com/book/daivela.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="hvr-rotate"
                     >
                       <img
                         src="http://kanlayanatam.com/book/cover/daivela.jpg"
@@ -272,6 +278,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/kvamdee.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/kvamdee_.jpg"
@@ -328,6 +335,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/jitphaiha.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/jitphaiha.jpg"
@@ -359,6 +367,7 @@ export default class BookList extends Component {
                     href="http://kanlayanatam.com/book/MaeShePan.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="hvr-rotate"
                   >
                     <img
                       src="http://kanlayanatam.com/book/cover/MaeShePan.jpg"
