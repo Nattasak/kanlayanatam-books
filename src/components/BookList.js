@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Rate } from "antd"
+import { Rate, Icon, Tooltip } from "antd"
 
 import "./BookList.css"
 
@@ -24,6 +24,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={5} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/kayaijai.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
                 <div className="content">
                   <p>
                     เราไม่อาจควบคุมหรือบงการให้มีแต่สิ่งดี ๆ เกิดขึ้นกับเรา
@@ -54,6 +65,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={5} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/WarngJai.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
                 <div className="content">
                   <p>
                     เราไม่สามารถควบคุมบงการ ผู้คนและโลกรอบตัว ให้เป็นดั่งใจ
@@ -80,6 +102,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={4} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/PleanTook.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
                 <div className="content">
                   <p>
                     ปราศจากโคลนตม ดอกบัวอันงดงาม ย่อมมิอาจเกิดขึ้นได้ฉันใด
@@ -109,6 +142,17 @@ export default class BookList extends Component {
                       </a>
                     </figure>
                     <Rate disabled value={3} />
+                    <div className="is-pulled-right">
+                      <a
+                        href="http://kanlayanatam.com/book/Piyakorntham.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Tooltip title="PDF">
+                          <Icon type="download" style={{ fontSize: 27 }} />
+                        </Tooltip>
+                      </a>
+                    </div>
                     <div className="content">
                       <p>
                         ความเข้าใจแจ่มแจ้งในเรื่องกรรมทำให้เรามีความอดทนในการทำความดี
@@ -139,6 +183,17 @@ export default class BookList extends Component {
                       </a>
                     </figure>
                     <Rate disabled value={4} />
+                    <div className="is-pulled-right">
+                      <a
+                        href="http://kanlayanatam.com/book/book_180.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Tooltip title="PDF">
+                          <Icon type="download" style={{ fontSize: 27 }} />
+                        </Tooltip>
+                      </a>
+                    </div>
                     <div className="content">
                       <p>
                         ความเจ็บป่วย เป็นธรรมดาของชีวิต
@@ -178,6 +233,17 @@ export default class BookList extends Component {
                     </a>
                   </figure>
                   <Rate disabled value={4} />
+                  <div className="is-pulled-right">
+                    <a
+                      href="http://kanlayanatam.com/book/daivela.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Tooltip title="PDF">
+                        <Icon type="download" style={{ fontSize: 27 }} />
+                      </Tooltip>
+                    </a>
+                  </div>
                 </article>
               </div>
             </div>
@@ -196,6 +262,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={3} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/kvamdee.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
                 <div className="content">
                   <p>
                     อะไรคือ ความดี ...???<br />
@@ -238,6 +315,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={3} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/jitphaiha.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
               </article>
             </div>
             <div className="tile is-parent is-8">
@@ -255,6 +343,17 @@ export default class BookList extends Component {
                   </a>
                 </figure>
                 <Rate disabled value={2} />
+                <div className="is-pulled-right">
+                  <a
+                    href="http://kanlayanatam.com/book/MaeShePan.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Tooltip title="PDF">
+                      <Icon type="download" style={{ fontSize: 27 }} />
+                    </Tooltip>
+                  </a>
+                </div>
                 <div className="content">
                   <p>
                     แม้อายุยังน้อยแต่เธอสามารถเข้าใจธรรมะที่ลึกซึ้งได้
