@@ -13,7 +13,7 @@ export default class BookList extends React.Component {
               author="พระไพศาล วิสาโล"
               star={5}
               img="img/books/kayaijai.jpg"
-              pdf="pdf/books/kayaijai.pdf"
+              pdf="http://kanlayanatam.com/book/kayaijai.pdf"
               size={4}
             >
               เราไม่อาจควบคุมหรือบงการให้มีแต่สิ่งดี ๆ เกิดขึ้นกับเรา
@@ -31,7 +31,7 @@ export default class BookList extends React.Component {
               author="พระไพศาล วิสาโล"
               star={5}
               img="img/books/warngjai.jpg"
-              pdf="pdf/books/วางใจให้เป็น.pdf"
+              pdf="http://kanlayanatam.com/book/WarngJai.pdf"
               size={4}
             >
               เราไม่สามารถควบคุมบงการ ผู้คนและโลกรอบตัว ให้เป็นดั่งใจ
@@ -46,7 +46,7 @@ export default class BookList extends React.Component {
               author="พระไพศาล วิสาโล"
               star={4}
               img="img/books/pleantook.jpg"
-              pdf="pdf/books/เปลี่ยนทุกข์เป็นธรรม.pdf"
+              pdf="http://kanlayanatam.com/book/PleanTook.pdf"
               size={4}
             >
               ปราศจากโคลนตม ดอกบัวอันงดงาม ย่อมมิอาจเกิดขึ้นได้ฉันใด
@@ -62,7 +62,7 @@ export default class BookList extends React.Component {
                   author="อ.วศิน อินทสระ"
                   star={3}
                   img="img/books/Piyakorntham.jpg"
-                  pdf="pdf/books/ปิยกรณธรรม.pdf"
+                  pdf="http://kanlayanatam.com/book/Piyakorntham.pdf"
                   size={6}
                 >
                   ความเข้าใจแจ่มแจ้งในเรื่องกรรมทำให้เรามีความอดทนในการทำความดี
@@ -81,7 +81,7 @@ export default class BookList extends React.Component {
                   author="พระไพศาล วิสาโล"
                   star={4}
                   img="img/books/book180.jpg"
-                  pdf="pdf/books/ธรรมะสำหรับผู้ป่วย.pdf"
+                  pdf="http://kanlayanatam.com/book/book_180.pdf"
                   size={6}
                 >
                   ความเจ็บป่วย เป็นธรรมดาของชีวิต
@@ -108,7 +108,7 @@ export default class BookList extends React.Component {
                 author="ปันยา"
                 star={4}
                 img="img/books/daivela.jpg"
-                pdf="pdf/books/ได้เวลาชำระจิตชำรุด.pdf"
+                pdf="http://kanlayanatam.com/book/daivela.pdf"
                 size={12}
               />
             </div>
@@ -118,7 +118,7 @@ export default class BookList extends React.Component {
               author="อ.วศิน อินทสระ"
               star={3}
               img="img/books/kvamdee.jpg"
-              pdf="pdf/books/ความดีและอานุภาพของความดี.pdf"
+              pdf="http://kanlayanatam.com/book/kvamdee.pdf"
               size={4}
             >
               อะไรคือ ความดี ...???<br />
@@ -148,7 +148,7 @@ export default class BookList extends React.Component {
               author="พระไพศาล วิสาโล"
               star={3}
               img="img/books/jitphaiha.jpg"
-              pdf="pdf/books/ชีวิตที่จิตใฝ่หา.pdf"
+              pdf="http://kanlayanatam.com/book/jitphaiha.pdf"
               size={4}
             />
 
@@ -157,7 +157,7 @@ export default class BookList extends React.Component {
               author="เงาศิลป์ คงแก้ว"
               star={3}
               img="img/books/MaeShePan.jpg"
-              pdf="pdf/books/เรื่องของแม่ชีป่าน.pdf"
+              pdf="http://kanlayanatam.com/book/MaeShePan.pdf"
               size={8}
             >
               แม้อายุยังน้อยแต่เธอสามารถเข้าใจธรรมะที่ลึกซึ้งได้
