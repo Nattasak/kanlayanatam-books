@@ -2,172 +2,127 @@ import React from "react"
 
 import BookItem from "./BookItem"
 
+import books from "../books.json"
+
 export default class BookList extends React.Component {
   render() {
+    /*const listBooks = books.map((item, index) => (
+      <BookItem
+        key={index}
+        title={item.title}
+        author={item.author}
+        img={item.img}
+        pdf={item.pdf}
+        star={item.star}
+        size={item.size}
+        caption={item.caption}
+      />
+    ))*/
+
+    // console.log(listBooks)
+    // console.log(books)
     return (
       <section className="section">
         <div className="container">
+          {/* <div>{listBooks}</div> */}
           <div className="tile is-ancestor">
             <BookItem
-              title="ขยายใจให้ใหญ่ขึ้น"
-              author="พระไพศาล วิสาโล"
-              star={5}
-              img="img/books/kayaijai.jpg"
-              pdf="http://kanlayanatam.com/book/kayaijai.pdf"
-              size={4}
-            >
-              เราไม่อาจควบคุมหรือบงการให้มีแต่สิ่งดี ๆ เกิดขึ้นกับเรา
-              แม้ระมัดระวังหรือทำดีที่สุดแล้ว
-              ก็ยังมีเหตุร้ายหรือสิ่งไม่พึงประสงค์เกิดขึ้นกับเราอยู่นั่นเอง
-              <br />
-              <br />
-              แต่มีสิ่งหนึ่งที่เราทำได้ก็คือ ดูแลรักษาใจให้เข้มแข็งมั่นคง
-              รวมทั้งขยายใจของเราให้ใหญ่ขึ้น ประหนึ่งแม่น้ำที่สามารถละลายน้ำพริก
-              หรือพิษทั้งหลายให้เจือจางลง
-            </BookItem>
+              title={books[0].title}
+              author={books[0].author}
+              star={books[0].star}
+              img={books[0].img}
+              pdf={books[0].pdf}
+              size={books[0].size}
+              caption={books[0].caption}
+            />
 
             <BookItem
-              title="วางใจให้เป็น"
-              author="พระไพศาล วิสาโล"
-              star={5}
-              img="img/books/warngjai.jpg"
-              pdf="http://kanlayanatam.com/book/WarngJai.pdf"
-              size={4}
-            >
-              เราไม่สามารถควบคุมบงการ ผู้คนและโลกรอบตัว ให้เป็นดั่งใจ
-              มิอาจคาดหวังหรือเรียกร้อง ให้มีแต่สิ่งดีๆ เกิดขึ้นกับเรา
-              อย่าได้มีสิ่งเลวร้ายผ่านเข้ามาในชีวิตเลย
-              แต่อย่างน้อยมีสิ่งหนึ่งที่เราทนได้ นั่นคือ การวางใจให้เป็น
-              ไม่ว่าอยู่ในสถานการณ์ใด
-            </BookItem>
+              title={books[1].title}
+              author={books[1].author}
+              star={books[1].star}
+              img={books[1].img}
+              pdf={books[1].pdf}
+              size={books[1].size}
+              caption={books[1].caption}
+            />
 
             <BookItem
-              title="เปลี่ยนทุกข์เป็นธรรม"
-              author="พระไพศาล วิสาโล"
-              star={4}
-              img="img/books/pleantook.jpg"
-              pdf="http://kanlayanatam.com/book/PleanTook.pdf"
-              size={4}
-            >
-              ปราศจากโคลนตม ดอกบัวอันงดงาม ย่อมมิอาจเกิดขึ้นได้ฉันใด
-              ปราศจากความทุกข์ ปัญญาหรือความรู้แจ้ง ก็มิอาจเกิดขึ้นได้ฉันนั้น
-            </BookItem>
+              title={books[2].title}
+              author={books[2].author}
+              star={books[2].star}
+              img={books[2].img}
+              pdf={books[2].pdf}
+              size={books[2].size}
+              caption={books[2].caption}
+            />
           </div>
 
           <div className="tile is-ancestor">
             <div className="tile is-vertical is-8">
               <div className="tile">
                 <BookItem
-                  title="ปิยกรณธรรม"
-                  author="อ.วศิน อินทสระ"
-                  star={3}
-                  img="img/books/Piyakorntham.jpg"
-                  pdf="http://kanlayanatam.com/book/Piyakorntham.pdf"
-                  size={6}
-                >
-                  ความเข้าใจแจ่มแจ้งในเรื่องกรรมทำให้เรามีความอดทนในการทำความดี
-                  มีความบากบั่นมั่นคงไม่ท้อถอย
-                  ช่วยให้กล้าเผชิญชีวิตอย่างกล้าหาญเด็ดเดี่ยว
-                  สามารถมองเห็นแง่ดีแม้ของความผิดหวังพลั้งพลาด
-                  แล้วตั้งต้นใหม่อย่างไม่ระย่อ
-                  <br />
-                  <br />
-                  คำสอนเรื่องกรรมจึงเป็นเรื่องท้าทาย
-                  ช่วยให้คนต่อสู้ดิ้นรนเพื่อพิสูจน์ด้วยตนเองว่าทำดีได้ดีนั้นเป็นอย่างไร
-                </BookItem>
+                  title={books[3].title}
+                  author={books[3].author}
+                  star={books[3].star}
+                  img={books[3].img}
+                  pdf={books[3].pdf}
+                  size={books[3].size}
+                  caption={books[3].caption}
+                />
 
                 <BookItem
-                  title="ธรรมะสำหรับผู้ป่วย"
-                  author="พระไพศาล วิสาโล"
-                  star={4}
-                  img="img/books/book180.jpg"
-                  pdf="http://kanlayanatam.com/book/book_180.pdf"
-                  size={6}
-                >
-                  ความเจ็บป่วย เป็นธรรมดาของชีวิต
-                  คนเราทุกคนย่อมต้องเผชิญกับความเจ็บป่วยด้วยกันทั้งนั้น
-                  <br />
-                  <br />
-                  แต่ในยามที่เราเจ็บป่วยทางกาย การดูแลรักษาใจไม่ให้เจ็บป่วยตาม
-                  ก็เป็นสิ่งสำคัญไม่น้อย หลายคนที่ป่วยทางกายเพียงเล็กน้อย
-                  แต่ป่วยทางใจมากกว่า ด้วยความคิดกังวลต่างๆ
-                  ทำให้อาการทรุดหนักลงเร็วกว่าเดิม
-                  <br />
-                  <br />
-                  เราลองมาศึกษาและหาทางเยียวยารักษาใจกันดูบ้างไหม? บางครั้ง
-                  หากใจไม่ป่วย ร่างกายเราก็หายป่วยเร็วขึ้น
-                  <br />
-                  <br />
-                  เหมือนดังพุทธพจน์ที่ว่า "ท่านพึงสำเหนียกว่า
-                  ถึงกายเราจะมีโรครุมเร้า แต่ใจของเรา จักไม่มีโรครุมเร้าเลย"
-                </BookItem>
+                  title={books[4].title}
+                  author={books[4].author}
+                  star={books[4].star}
+                  img={books[4].img}
+                  pdf={books[4].pdf}
+                  size={books[4].size}
+                  caption={books[4].caption}
+                />
               </div>
 
               <BookItem
-                title="ได้เวลาชำระจิตชำรุด"
-                author="ปันยา"
-                star={4}
-                img="img/books/daivela.jpg"
-                pdf="http://kanlayanatam.com/book/daivela.pdf"
-                size={12}
+                title={books[5].title}
+                author={books[5].author}
+                star={books[5].star}
+                img={books[5].img}
+                pdf={books[5].pdf}
+                size={books[5].size}
+                caption={books[5].caption}
               />
             </div>
 
             <BookItem
-              title="ความดีและอานุภาพของความดี"
-              author="อ.วศิน อินทสระ"
-              star={3}
-              img="img/books/kvamdee.jpg"
-              pdf="http://kanlayanatam.com/book/kvamdee.pdf"
-              size={4}
-            >
-              อะไรคือ ความดี ...???<br />
-              อะไรคือ ความชั่ว ....???<br />
-              ทำไมทำดีแล้วไม่ได้ดี....???<br />
-              อานุภาพของความดีคืออะไร...???<br />
-              วิธีการสร้างความดี...???
-              <br />
-              <br />
-              ในทางพุทธศาสนาถือว่า การกระทำใดๆ ทั้งกาย วาจา ใจ
-              ที่ไม่เบียดเบียนตนเองและผู้อื่นให้เดือดร้อน และมีประโยชน์
-              ก็ถือว่าเป็นความดี การกระทำใดๆ ทั้งกาย วาจา ใจ
-              ที่ทำให้ตนเองและผู้อื่นมีความเพลิดเพลิน แต่ไม่มีประโยชน์
-              ซ้ำยังอาจเป็นโทษด้วย ก็ถือว่าเป็นความชั่ว
-              <br />
-              <br />
-              ลองมาศึกษากันดูไหม...<br />
-              ว่าอะไรคือความดี ?<br />
-              แล้วเราจะทำดีได้อย่างไร ?<br />
-              ทำดีแล้ว มีอานุภาพอย่างไร ?
-            </BookItem>
+              title={books[6].title}
+              author={books[6].author}
+              star={books[6].star}
+              img={books[6].img}
+              pdf={books[6].pdf}
+              size={books[6].size}
+              caption={books[6].caption}
+            />
           </div>
 
           <div className="tile is-ancestor">
             <BookItem
-              title="ชีวิตที่จิตใฝ่หา"
-              author="พระไพศาล วิสาโล"
-              star={3}
-              img="img/books/jitphaiha.jpg"
-              pdf="http://kanlayanatam.com/book/jitphaiha.pdf"
-              size={4}
+              title={books[7].title}
+              author={books[7].author}
+              star={books[7].star}
+              img={books[7].img}
+              pdf={books[7].pdf}
+              size={books[7].size}
+              caption={books[7].caption}
             />
 
             <BookItem
-              title="เรื่องของแม่ชีป่าน"
-              author="เงาศิลป์ คงแก้ว"
-              star={3}
-              img="img/books/MaeShePan.jpg"
-              pdf="http://kanlayanatam.com/book/MaeShePan.pdf"
-              size={8}
-            >
-              แม้อายุยังน้อยแต่เธอสามารถเข้าใจธรรมะที่ลึกซึ้งได้
-              นอกจากการสวดมนต์แล้ว หนังสือธรรมะยังเป็นที่พึ่งทางใจของเธอ
-              ที่สำคัญกว่านั้นคือการภาวนา ด้วยการพิจารณากายและใจอย่างต่อเนื่อง
-              เรียนรู้จากทุกขเวทนาที่ปรากฏกับกาย เพื่อเห็นความจริงว่า
-              สิ่งเหล่านี้ มิอาจยึดมั่นถือมั่นเป็นเราและของเราได้เลย
-              ความจริงดังกล่าวนี้แหละ ที่จะนำไปสู่การปล่อยวาง
-              จนทุกข์มิอาจย่ำยีบีฑาจิตใจได้
-            </BookItem>
+              title={books[8].title}
+              author={books[8].author}
+              star={books[8].star}
+              img={books[8].img}
+              pdf={books[8].pdf}
+              size={books[8].size}
+              caption={books[8].caption}
+            />
           </div>
         </div>
       </section>

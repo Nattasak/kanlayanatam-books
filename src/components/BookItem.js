@@ -5,7 +5,10 @@ import "./BookItem.css"
 
 export default class BookItem extends React.Component {
   render() {
-    const { author, children, img, pdf, size, star, title } = this.props
+    const { author, caption, img, pdf, size, star, title } = this.props
+    function captionMarkup() {
+      return { __html: caption }
+    }
     return (
       <div className={`tile is-parent is-${size}`}>
         <article className="tile is-child box">
@@ -31,7 +34,7 @@ export default class BookItem extends React.Component {
             <Tag>{author}</Tag>
           </div>
           <div className="content">
-            <p>{children}</p>
+            <p dangerouslySetInnerHTML={captionMarkup()} />
           </div>
         </article>
       </div>
