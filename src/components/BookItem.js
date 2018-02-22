@@ -5,12 +5,12 @@ import "./BookItem.css"
 
 export default class BookItem extends React.Component {
   render() {
-    const { author, caption, img, pdf, size, star, title } = this.props
+    const { author, caption, img, pdf, star, title } = this.props
     function captionMarkup() {
       return { __html: caption }
     }
     return (
-      <div className={`tile is-parent is-${size}`}>
+      <div className="tile is-parent is-3">
         <article className="tile is-child box">
           <figure className="image">
             <a
