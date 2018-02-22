@@ -1,10 +1,21 @@
 import React from "react"
 import chunk from "lodash.chunk"
+import flattenDeep from "lodash.flattendeep"
+import { Tag } from "antd"
 
-import HotTags from "./HotTags"
 import BookItem from "./BookItem"
 
 import books from "../books.json"
+
+const CheckableTag = Tag.CheckableTag
+
+const tagsFromServer = [
+  "พระไพศาล วิสาโล",
+  "อ.วศิน อินทสระ",
+  "อ.สุภีร์ ทุมทอง",
+  "ปันยา",
+  "เงาศิลป์ คงแก้ว"
+]
 
 /* not use ( use new way ^^ ~ )
 function BooksRowsRenderOldWay() {
@@ -35,7 +46,16 @@ function BooksRowsRenderOldWay() {
   return booksRows
 } */
 
-function BooksRowsRender() {
+function BooksRowsRender({ authors }) {
+  let data = books
+
+  if (authors.length) {
+    const booksFilterByAuthor = authors.map(author => {
+      return books.filter(b => b.author === author)
+    })
+    data = flattenDeep(booksFilterByAuthor)
+  }
+
   ///////////////////////////////////////////////////
   // before chunk: [ {}, {}, {}, {}, {}, {} ]
   // how to render?: map item (obj) ได้เลย!
@@ -44,7 +64,7 @@ function BooksRowsRender() {
   // how to render?: map ทีละก้อน (arr) -> แล้วค่อย map item (obj) ในแต่ละก้อน
   ///////////////////////////////////////////////////
 
-  const booksChunk = chunk(books, 4)
+  const booksChunk = chunk(data, 4)
 
   const result = booksChunk.map((row, i) => {
     const booksRow = row.map((item, i) => (
@@ -68,12 +88,36 @@ function BooksRowsRender() {
 }
 
 export default class BookList extends React.Component {
+  state = {
+    selectedTags: []
+  }
+
+  handleTagsChange(tag, checked) {
+    const { selectedTags } = this.state
+    const nextSelectedTags = checked
+      ? [...selectedTags, tag]
+      : selectedTags.filter(t => t !== tag)
+    this.setState({ selectedTags: nextSelectedTags })
+  }
+
   render() {
+    const { selectedTags } = this.state
     return (
       <section className="section">
         <div className="container">
-          <HotTags />
-          <BooksRowsRender />
+          <div style={{ marginBottom: 35 }}>
+            <h3 style={{ marginRight: 8, display: "inline" }}>Author:</h3>
+            {tagsFromServer.map(tag => (
+              <CheckableTag
+                key={tag}
+                checked={selectedTags.indexOf(tag) > -1}
+                onChange={checked => this.handleTagsChange(tag, checked)}
+              >
+                {tag}
+              </CheckableTag>
+            ))}
+          </div>
+          <BooksRowsRender authors={selectedTags} />
         </div>
       </section>
     )
