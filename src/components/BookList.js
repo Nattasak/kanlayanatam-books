@@ -18,9 +18,8 @@ function BookRowsRender() {
         author={item.author}
         img={item.img}
         pdf={item.pdf}
-        star={item.star}
-        size={item.size}
         caption={item.caption}
+        star={item.star}
       />
     ))
     rows.push(bookRow)
