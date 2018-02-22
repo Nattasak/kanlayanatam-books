@@ -5,16 +5,15 @@ import BookItem from "./BookItem"
 
 import books from "../books.json"
 
-function BookList() {
+function BookRowsRender() {
+  const c = 4
   var rows = []
-  const col = 4
 
-  for (let i = 0; i < books.length; i += col) {
-    const row = books.slice(i, i + col)
-
-    const listBooks = row.map((item, index) => (
+  for (let i = 0; i < books.length; i += c) {
+    const row = books.slice(i, i + c)
+    const bookRow = row.map((item, i) => (
       <BookItem
-        key={index}
+        key={i}
         title={item.title}
         author={item.author}
         img={item.img}
@@ -24,25 +23,26 @@ function BookList() {
         caption={item.caption}
       />
     ))
-    rows.push(listBooks)
+    rows.push(bookRow)
   }
 
-  const show = rows.map((row, index) => (
-    <div key={index} className="tile is-ancestor">
+  const bookRows = rows.map((row, i) => (
+    <div key={i} className="tile is-ancestor">
       {row}
     </div>
   ))
-
-  return show
+  return bookRows
 }
 
-export default () => {
-  return (
-    <section className="section">
-      <div className="container">
-        <HotTags />
-        <BookList />
-      </div>
-    </section>
-  )
+export default class BookList extends React.Component {
+  render() {
+    return (
+      <section className="section">
+        <div className="container">
+          <HotTags />
+          <BookRowsRender />
+        </div>
+      </section>
+    )
+  }
 }
