@@ -50,8 +50,8 @@ function BooksRowsRender({ authors }) {
   let data = books
 
   if (authors.length) {
-    const booksFilterByAuthor = authors.map(author => {
-      return books.filter(b => b.author === author)
+    const booksFilterByAuthor = authors.map(a => {
+      return books.filter(b => b.author === a)
     })
     data = flattenDeep(booksFilterByAuthor)
   }
@@ -62,20 +62,19 @@ function BooksRowsRender({ authors }) {
 
   // after chunk: [ [{}, {}], [{}, {}], [{}, {}] ]
   // how to render?: map ทีละก้อน (arr) -> แล้วค่อย map item (obj) ในแต่ละก้อน
-  ///////////////////////////////////////////////////
 
   const booksChunk = chunk(data, 4)
 
   const result = booksChunk.map((row, i) => {
-    const booksRow = row.map((item, i) => (
+    const booksRow = row.map((b, i) => (
       <BookItem
         key={i}
-        title={item.title}
-        author={item.author}
-        img={item.img}
-        pdf={item.pdf}
-        caption={item.caption}
-        star={item.star}
+        title={b.title}
+        author={b.author}
+        img={b.img}
+        pdf={b.pdf}
+        caption={b.caption}
+        star={b.star}
       />
     ))
     return (
