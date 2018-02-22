@@ -1,9 +1,17 @@
 import React from "react"
+import Loadable from "react-loadable"
 import { BackTop } from "antd"
 
-import BookList from "./components/BookList"
+import Loading from "./components/Loading"
 
 import "./App.css"
+
+const LoadableBookList = Loadable({
+  loader: () => import("./components/BookList"),
+  loading: Loading,
+  delay: 200,
+  timeout: 10000
+})
 
 export default class App extends React.Component {
   render() {
@@ -19,7 +27,7 @@ export default class App extends React.Component {
             </div>
           </div>
         </section>
-        <BookList />
+        <LoadableBookList />
         <BackTop />
       </div>
     )
