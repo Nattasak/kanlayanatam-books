@@ -1,6 +1,7 @@
 import React from "react"
 import chunk from "lodash.chunk"
 import flattenDeep from "lodash.flattendeep"
+import uniq from "lodash.uniq"
 import { Tag } from "antd"
 
 import BookItem from "./BookItem"
@@ -8,14 +9,7 @@ import BookItem from "./BookItem"
 import books from "../books.json"
 
 const CheckableTag = Tag.CheckableTag
-
-const tagsFromServer = [
-  "พระไพศาล วิสาโล",
-  "อ.วศิน อินทสระ",
-  "อ.สุภีร์ ทุมทอง",
-  "ปันยา",
-  "เงาศิลป์ คงแก้ว"
-]
+const tagsFromServer = uniq(books.map(b => b.author))
 
 /* not use ( use new way ^^ ~ )
 function BooksRowsRenderOldWay() {
