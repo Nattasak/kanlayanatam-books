@@ -3,7 +3,6 @@ import { Spin } from "antd"
 
 function LoadingComponent(props) {
   if (props.error) {
-    // When the loader has errored
     return (
       <section className="section">
         <div className="container">
@@ -12,7 +11,6 @@ function LoadingComponent(props) {
       </section>
     )
   } else if (props.timedOut) {
-    // When the loader has taken longer than the timeout
     return (
       <section className="section">
         <div className="container">
@@ -20,7 +18,6 @@ function LoadingComponent(props) {
         </div>
       </section>
     )
-    return <div />
   } else if (props.pastDelay) {
     // When the loader has taken longer than the delay
     return (

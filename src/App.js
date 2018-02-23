@@ -4,7 +4,7 @@ import { BackTop } from "antd"
 
 import Loading from "./components/Loading"
 
-import "./App.css"
+// import "./App.css"
 
 const LoadableBookList = Loadable({
   loader: () => import("./components/BookList"),
