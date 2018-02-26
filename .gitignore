@@ -1,6 +1,7 @@
 # LOCAL
 booksTestMock.json
 OldWay.js
+/src/components/formsy-react
 
 # dependencies
 /node_modules
