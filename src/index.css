@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "NotoSansThai";
+  src: local("NotoSans Thai"), local("NotoSansThai"),
+    url("./fonts/NotoSansThai-Regular.woff2") format("woff2"),
+    url("./fonts/NotoSansThai-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "NotoSansThai";
+  src: local("NotoSans Thai"), local("NotoSansThai"),
+    url("./fonts/NotoSansThai-Bold.woff2") format("woff2"),
+    url("./fonts/NotoSansThai-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NotoSerifThai";
+  src: local("NotoSerif Thai"), local("NotoSerifThai"),
+    url("./fonts/NotoSerifThai-Regular.woff2") format("woff2"),
+    url("./fonts/NotoSerifThai-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "NotoSerifThai";
+  src: local("NotoSerif Thai"), local("NotoSerifThai"),
+    url("./fonts/NotoSerifThai-Bold.woff2") format("woff2"),
+    url("./fonts/NotoSerifThai-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+body {
+  font-family: "NotoSerifThai";
+  font-size: 16px;
+  color: black;
+}
+
+h1.title {
+  font-family: "NotoSansThai";
+}
+
+.ant-tag {
+  font-family: "NotoSansThai" !important;
+  font-size: 14px !important;
+  line-height: 26px !important;
+  height: 26px !important;
+}
+
+.tag-wrapper .ant-tag {
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  height: 28px !important;
+}
+
+h2,
+h3 {
+  font-family: Monospaced Number, Chinese Quote, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

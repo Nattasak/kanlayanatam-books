@@ -1,12 +1,11 @@
 {
   "name": "kanlayanatam-books",
   "version": "1.0.0",
+  "homepage": "http://nattasak.github.io/kanlayanatam-books",
   "author": "Nattasak Lertpoompunya",
   "license": "UNLICENSED",
-  "homepage": "http://nattasak.github.io/kanlayanatam-books",
   "dependencies": {
     "antd": "^3.2.1",
-    "formsy-react": "^1.1.3",
     "lodash.chunk": "^4.2.0",
     "lodash.flattendeep": "^4.4.0",
     "lodash.uniq": "^4.5.0",

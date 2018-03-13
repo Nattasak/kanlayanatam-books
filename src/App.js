@@ -1,16 +1,14 @@
-import React from "react"
-import Loadable from "react-loadable"
-import { BackTop } from "antd"
+import { BackTop } from 'antd'
+import Loadable from 'react-loadable'
+import React from 'react'
 
-import Loading from "./components/Loading"
-
-// import "./App.css"
+import Loading from './components/Loading'
 
 const LoadableBookList = Loadable({
-  loader: () => import("./components/BookList"),
+  loader: () => import('./components/BookList'),
   loading: Loading,
   delay: 200,
-  timeout: 10000
+  timeout: 10000,
 })
 
 export default class App extends React.Component {

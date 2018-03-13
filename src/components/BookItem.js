@@ -1,7 +1,7 @@
-import React from "react"
-import { Icon, Rate, Tag, Tooltip } from "antd"
+import { Icon, Rate, Tag, Tooltip } from 'antd'
+import React from 'react'
 
-import "./BookItem.css"
+import './BookItem.css'
 
 export default class BookItem extends React.Component {
   render() {
@@ -13,12 +13,7 @@ export default class BookItem extends React.Component {
       <div className="tile is-parent is-3">
         <article className="tile is-child box">
           <figure className="image">
-            <a
-              href={pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hvr-rotate"
-            >
+            <a href={pdf} target="_blank" rel="noopener noreferrer" className="hvr-rotate">
               <img src={img} alt={title} />
             </a>
           </figure>

@@ -1,12 +1,13 @@
-import React from "react"
-import chunk from "lodash.chunk"
-import flattenDeep from "lodash.flattendeep"
-import uniq from "lodash.uniq"
-import { Tag } from "antd"
+import { Tag } from 'antd'
+import React from 'react'
 
-import BookItem from "./BookItem"
+import chunk from 'lodash.chunk'
+import flattenDeep from 'lodash.flattendeep'
+import uniq from 'lodash.uniq'
 
-import books from "../books.json"
+import BookItem from './BookItem'
+
+import books from '../books.json'
 
 const CheckableTag = Tag.CheckableTag
 
@@ -26,15 +27,7 @@ function BooksRowsRender({ authors }) {
 
   const result = booksChunk.map((row, i) => {
     const booksRow = row.map((b, i) => (
-      <BookItem
-        key={i}
-        title={b.title}
-        author={b.author}
-        img={b.img}
-        pdf={b.pdf}
-        caption={b.caption}
-        star={b.star}
-      />
+      <BookItem key={i} title={b.title} author={b.author} img={b.img} pdf={b.pdf} caption={b.caption} star={b.star} />
     ))
     return (
       <div key={i} className="tile is-ancestor">
@@ -47,14 +40,12 @@ function BooksRowsRender({ authors }) {
 
 export default class BookList extends React.Component {
   state = {
-    selectedTags: []
+    selectedTags: [],
   }
 
   handleTagsChange(tag, checked) {
     const { selectedTags } = this.state
-    const nextSelectedTags = checked
-      ? [...selectedTags, tag]
-      : selectedTags.filter(t => t !== tag)
+    const nextSelectedTags = checked ? [...selectedTags, tag] : selectedTags.filter(t => t !== tag)
     this.setState({ selectedTags: nextSelectedTags })
   }
 
@@ -63,8 +54,8 @@ export default class BookList extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div style={{ marginBottom: 35 }}>
-            <h3 style={{ marginRight: 8, display: "inline" }}>Author:</h3>
+          <div className="tag-wrapper" style={{ marginBottom: 35 }}>
+            <h3 style={{ marginRight: 20, display: 'inline' }}>เลือกนักเขียน →</h3>
             {tagsFromServer.map(tag => (
               <CheckableTag
                 key={tag}
